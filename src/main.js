@@ -1,24 +1,55 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import emailjs from "@emailjs/browser";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+// Inicializar EmailJS com sua chave pública
+emailjs.init("");
 
-setupCounter(document.querySelector('#counter'))
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.style.display =
+    mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+    mobileMenu.classList.toggle("show");
+    toggleBtn.classList.toggle("active");
+  });
+
+  mobileMenu.addEventListener('click', () => {
+    mobileMenu.style.display =
+      mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+        mobileMenu.classList.remove("show");
+      toggleBtn.classList.remove("active"); 
+
+  });
+
+
+const form = document.getElementById("formContato");
+  form.addEventListener("submit", enviarFormulario);
+});
+
+
+function enviarFormulario(event) {
+  event.preventDefault();
+
+  const nome = document.getElementById('nome').value;
+  const email = document.getElementById('email').value;
+  const mensagem = document.getElementById('mensagem').value;
+  const resposta = document.getElementById('resposta');
+
+  emailjs.send("", "", {
+    name: nome,
+    email: email,
+    message: mensagem
+  }, "")
+    .then(() => {
+      resposta.textContent = "Enviado com sucesso!";
+      resposta.style.color = "green";
+      document.getElementById('formContato').reset();
+    })
+    .catch((error) => {
+      resposta.textContent = "Erro: " + error.text;
+      resposta.style.color = "red";
+    });
+
+  return false;
+}
