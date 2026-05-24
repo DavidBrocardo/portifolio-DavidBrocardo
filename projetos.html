@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Brocardo</title>
+    <title>David Brocardo — Projetos</title>
     <link rel="stylesheet" href="src/style.css">
-    <link rel="icon" type="/image/png" href="img/programacao-da-web.png">
+    <link rel="icon" type="image/png" href="img/programacao-da-web.png">
 </head>
-
-
 
 <body>
 
-
-
     <div class="container">
+
+        <!-- ========== HEADER ========== -->
         <section id="cabecalho">
             <div class="menu-container">
                 <div class="menu-box">
@@ -23,291 +21,239 @@
                     <div class="menu-logo">
                         <img src="img/programacao.png" alt="Logo">
                     </div>
+
                     <div class="menu-links">
-                        <a href="/portifolio-DavidBrocardo/index.html#apresentacao">Sobre mim</a>
-                        <a href="/portifolio-DavidBrocardo/index.html#curriculo">Currículo</a>
-                        <a href="/portifolio-DavidBrocardo#projetos">Projetos</a>
-                        <a href="/portifolio-DavidBrocardo#conhecimentos">Habilidades</a>
-                        <a href="/portifolio-DavidBrocardo/index.html#contato">Contato</a>
+                        <a href="/portifolio-DavidBrocardo/index.html#apresentacao" data-pt="Sobre mim" data-en="About">Sobre mim</a>
+                        <a href="/portifolio-DavidBrocardo/index.html#curriculo" data-pt="Currículo" data-en="Resume">Currículo</a>
+                        <a href="#projetos" data-pt="Projetos" data-en="Projects">Projetos</a>
+                        <a href="#conhecimentos" data-pt="Habilidades" data-en="Skills">Habilidades</a>
+                        <a href="/portifolio-DavidBrocardo/index.html#contato" data-pt="Contato" data-en="Contact">Contato</a>
                     </div>
 
+                    <div class="language-toggle">
+                        <button id="langBtn" class="lang-btn" title="Toggle language">
+                            <span class="lang-text">EN</span>
+                            <span class="lang-flag">🇧🇷</span>
+                        </button>
+                    </div>
 
                     <button class="menu-toggle" id="menuToggle">
                         <span></span>
                         <span></span>
                         <span></span>
                     </button>
+
                 </div>
             </div>
 
             <div class="mobile-menu" id="mobileMenu">
-                <a href="/portifolio-DavidBrocardo/index.html#apresentacao">Sobre mim</a>
-                <a href="/portifolio-DavidBrocardo/index.html#curriculo">Currículo</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#conhecimentos">Habilidades</a>
-                <a href="/portifolio-DavidBrocardo/index.html#contato">Contato</a>
+                <a href="/portifolio-DavidBrocardo/index.html#apresentacao" data-pt="Sobre mim" data-en="About">Sobre mim</a>
+                <a href="/portifolio-DavidBrocardo/index.html#curriculo" data-pt="Currículo" data-en="Resume">Currículo</a>
+                <a href="#projetos" data-pt="Projetos" data-en="Projects">Projetos</a>
+                <a href="#conhecimentos" data-pt="Habilidades" data-en="Skills">Habilidades</a>
+                <a href="/portifolio-DavidBrocardo/index.html#contato" data-pt="Contato" data-en="Contact">Contato</a>
             </div>
-
-
         </section>
 
-
+        <!-- ========== PROJECTS ========== -->
         <section id="projetos">
-            <h2>Meus Projetos</h2>
+            <p class="section-label" data-pt="Portfólio" data-en="Portfolio">Portfólio</p>
+            <h2 data-pt="Meus Projetos" data-en="My Projects">Meus Projetos</h2>
+
             <div>
 
                 <div class="card">
-                    <h3>Modelador de superficies 3D usando B-Splines </h3>
-                    <p>Projeto desenvolvido em Python para modelagem de superfícies tridimensionais utilizando
-                        B-Splines. O
-                        sistema oferece uma interface em Tkinter, permitindo manipular parâmetros de variáveis,
-                        superfícies
-                        e sombreamento</p>
-                    <div id="icones-todos-contato">
-                        <a href="https://github.com/DavidBrocardo/Modelador-para-superficies-3D-usando-B-Splines/tree/main"
-                            target="_blank" class="imgProjeto">
-                            <img src="img/github.png" alt="GitHub">
-                        </a>
-                    </div>
-                </div>
-
-
-
-                <div class="card">
-                    <h3>CapyScript - Criação de uma de Linguagem de Programação e seu Compilador</h3>
-                    <p>Este projeto implementa um Compilador , abrangendo todas as etapas do processo de compilação:
-                        Análise
-                        Léxica, Sintática, Semântica e Geração de Código. O objetivo principal é garantir a correta
-                        tradução
-                        do código-fonte.</p>
-                    <div id="icones-todos-contato">
-                        <a href="https://github.com/DavidBrocardo/Compilador" target="_blank" class="imgProjeto">
-                            <img src="img/github.png" alt="GitHub">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Análise de Dados usando Python e Jupyter.</h3>
-                    <p>Esta atividade teve como objetivo analisar os dados de benefícios concedidos pelo INSS no mês de
-                        junho de 2021, utilizando a linguagem Python no ambiente Jupyter Notebook, com o apoio das
-                        bibliotecas NumPy, Pandas, Matplotlib e Seaborn.</p>
-                    <div id="icones-todos-contato">
-                        <a href="https://github.com/DavidBrocardo/Analise-de-Dados-Previdencia-usando-Jupyter"
-                            target="_blank" class="imgProjeto">
-                            <img src="img/github.png" alt="GitHub">
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <h3>Análise assintótica de Algoritmos de Busca em Árvores Rubro-Negra </h3>
-                    <p>Nesta atividade realizei a implementação e compararação de algoritmos de busca em uma Arvore de
-                        busca
-                        binaria Rubro Negra, utilizando Busca em Profundidade e Busca em Largura, analisando o
-                        desempenho em
-                        tempo de execução e em número de comparações entre diferentes tamanhos de base de dados.</p>
-                    <div id="icones-todos-contato">
-                        <a href="https://github.com/DavidBrocardo/PAA_Manipulacao_Dados_Hierarquia_RB" target="_blank"
-                            class="imgProjeto">
-                            <img src="img/github.png" alt="GitHub">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Metodos de Regressão - Aprendizagem de Máquina</h3>
-                    <p>Este projeto explora o uso de algoritmos de regressão com aprendizado de máquina aplicados à base
-                        de
-                        dados Life Expectancy, que contém informações sobre a expectativa de vida em diferentes países.
-                        Foram utilizados cinco algoritmos de AM: KNR, SVR, MLP, RF e GB, além da RLM, que não utiliza
-                        aprendizado de máquina.</p>
-                    <div id="icones-todos-contato">
-                        <a href="https://github.com/DavidBrocardo/Metodos-de-Regressao-Aprendizagem-de-Maquina-"
-                            target="_blank" class="imgProjeto">
-                            <img src="img/github.png" alt="GitHub">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>TCC - Bacharelado Ciência da Computação </h3>
-                    <p>Máquina de Turing Desplugada: Práticas para o desenvolvimento do Pensamento Computacional e o
-                        ensino
-                        de Matemática</p>
-                    <div id="icones-todos-contato">
-                        <a href="pdf/TCC___David___Computação_Unioeste_Cascavel.pdf" target="_blank" class="imgProjeto">
-                            <img src="img/download.png" alt="GitHub">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Confira meus projetos no GitHub</h3>
-                    <p>
-                        Clique no ícone abaixo para acessar meu GitHub e explorar outros projetos além destes.
+                    <h3 data-pt="Modelador de superfícies 3D usando B-Splines" data-en="3D surface modeler using B-Splines">Modelador de superfícies 3D usando B-Splines / 3D surface modeler using B-Splines</h3>
+                    <p data-pt="Projeto desenvolvido em Python para modelagem de superfícies tridimensionais utilizando B-Splines. Interface em Tkinter para manipulação de parâmetros de variáveis, superfícies e sombreamento."
+                       data-en="Project developed in Python for modeling three-dimensional surfaces using B-Splines. Tkinter interface for manipulating parameters for variables, surfaces and shading.">
+                        Projeto desenvolvido em Python para modelagem de superfícies tridimensionais utilizando
+                        B-Splines. Interface em Tkinter para manipulação de parâmetros de variáveis, superfícies e sombreamento.
                     </p>
                     <div id="icones-todos-contato">
-                        <a href="https://github.com/DavidBrocardo" target="_blank" class="imgProjeto">
+                        <a href="https://github.com/DavidBrocardo/Modelador-para-superficies-3D-usando-B-Splines/tree/main"
+                           target="_blank" title="GitHub">
                             <img src="img/github.png" alt="GitHub">
                         </a>
-
                     </div>
+                </div>
 
+                <div class="card">
+                    <h3 data-pt="CapyScript — Linguagem de Programação e Compilador" data-en="CapyScript — Programming Language and Compiler">CapyScript — Linguagem de Programação e Compilador / CapyScript — Programming Language and Compiler</h3>
+                    <p data-pt="Implementação de um compilador completo: Análise Léxica, Sintática, Semântica e Geração de Código, garantindo a correta tradução do código-fonte."
+                       data-en="Implementation of a complete compiler: Lexical, Syntactic, Semantic Analysis and Code Generation, ensuring correct translation of source code.">
+                        Implementação de um compilador completo, abrangendo todas as etapas: Análise Léxica,
+                        Sintática, Semântica e Geração de Código, garantindo a correta tradução do código-fonte.
+                    </p>
+                    <div id="icones-todos-contato">
+                        <a href="https://github.com/DavidBrocardo/Compilador" target="_blank" title="GitHub">
+                            <img src="img/github.png" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
 
+                <div class="card">
+                    <h3 data-pt="Análise de Dados com Python e Jupyter" data-en="Data Analysis with Python and Jupyter">Análise de Dados com Python e Jupyter / Data Analysis with Python and Jupyter</h3>
+                    <p data-pt="Análise dos dados de benefícios do INSS (junho/2021) usando Python, Jupyter Notebook com NumPy, Pandas, Matplotlib e Seaborn."
+                       data-en="Analysis of INSS benefit data (June 2021) using Python, Jupyter Notebook with NumPy, Pandas, Matplotlib and Seaborn.">
+                        Análise dos dados de benefícios concedidos pelo INSS em junho de 2021, utilizando Python
+                        no Jupyter Notebook com as bibliotecas NumPy, Pandas, Matplotlib e Seaborn.
+                    </p>
+                    <div id="icones-todos-contato">
+                        <a href="https://github.com/DavidBrocardo/Analise-de-Dados-Previdencia-usando-Jupyter"
+                           target="_blank" title="GitHub">
+                            <img src="img/github.png" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 data-pt="Análise Assintótica em Árvores Rubro-Negra" data-en="Asymptotic Analysis in Red-Black Trees">Análise Assintótica em Árvores Rubro-Negra / Asymptotic Analysis in Red-Black Trees</h3>
+                    <p data-pt="Implementação e comparação de algoritmos de busca (DFS e BFS) em Árvore Rubro-Negra, analisando desempenho em tempo de execução e número de comparações."
+                       data-en="Implementation and comparison of search algorithms (DFS and BFS) in Red-Black Tree, analyzing performance in execution time and number of comparisons.">
+                        Implementação e comparação de algoritmos de busca em Árvore Rubro-Negra com Busca em
+                        Profundidade (DFS) e Largura (BFS), analisando desempenho e número de comparações.
+                    </p>
+                    <div id="icones-todos-contato">
+                        <a href="https://github.com/DavidBrocardo/PAA_Manipulacao_Dados_Hierarquia_RB"
+                           target="_blank" title="GitHub">
+                            <img src="img/github.png" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 data-pt="Métodos de Regressão — Machine Learning" data-en="Regression Methods — Machine Learning">Métodos de Regressão — Machine Learning / Regression Methods — Machine Learning</h3>
+                    <p data-pt="Exploração de algoritmos de regressão com ML aplicados à base Life Expectancy, comparando cinco algoritmos: KNR, SVR, MLP, RF e GB."
+                       data-en="Exploration of regression algorithms with ML applied to the Life Expectancy database, comparing five algorithms: KNR, SVR, MLP, RF and GB.">
+                        Exploração de algoritmos de regressão com aprendizado de máquina na base Life Expectancy,
+                        comparando cinco algoritmos: KNR, SVR, MLP, RF e GB, além da Regressão Linear Múltipla.
+                    </p>
+                    <div id="icones-todos-contato">
+                        <a href="https://github.com/DavidBrocardo/Metodos-de-Regressao-Aprendizagem-de-Maquina-"
+                           target="_blank" title="GitHub">
+                            <img src="img/github.png" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 data-pt="TCC — Bacharelado em Ciência da Computação" data-en="TCC — Bachelor of Computer Science">TCC — Bacharelado em Ciência da Computação / TCC — Bachelor of Computer Science</h3>
+                    <p data-pt="Máquina de Turing Desplugada: Práticas para o desenvolvimento do Pensamento Computacional e o ensino de Matemática. Aprovado com nota máxima."
+                       data-en="Unplugged Turing Machine: Practices for developing Computational Thinking and teaching Mathematics. Approved with maximum grade.">
+                        Máquina de Turing Desplugada: Práticas para o desenvolvimento do Pensamento Computacional
+                        e o ensino de Matemática. Aprovado com nota máxima.
+                    </p>
+                    <div id="icones-todos-contato">
+                        <a href="pdf/TCC___David___Computação_Unioeste_Cascavel.pdf" target="_blank" title="Download PDF">
+                            <img src="img/download.png" alt="Download">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 data-pt="Mais projetos no GitHub" data-en="More projects on GitHub">Mais projetos no GitHub / More projects on GitHub</h3>
+                    <p data-pt="Explore outros projetos além destes no meu perfil do GitHub."
+                       data-en="Explore other projects beyond these on my GitHub profile.">
+                        Explore outros projetos no meu perfil do GitHub.
+                    </p>
+                    <div id="icones-todos-contato">
+                        <a href="https://github.com/DavidBrocardo" target="_blank" title="GitHub">
+                            <img src="img/github.png" alt="GitHub">
+                        </a>
+                    </div>
                 </div>
 
             </div>
-
         </section>
 
+        <!-- ========== SKILLS ========== -->
         <section id="conhecimentos">
-            <h2>Habilidades</h2>
+            <p class="section-label" data-pt="Stack" data-en="Stack">Stack</p>
+            <h2 data-pt="Habilidades" data-en="Skills">Habilidades</h2>
             <div>
 
                 <div class="card">
+                    <div id="icones-skils">
+                        <a><img src="img/java.png" alt="Java"></a>
+                    </div>
                     <h3>Java</h3>
-                    <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/java.png" alt="Saiba mais">
-                        </a>
-                    </div>
                 </div>
 
                 <div class="card">
+                    <div id="icones-skils">
+                        <a><img src="img/C_Logo.png" alt="C"></a>
+                    </div>
                     <h3>C</h3>
-                    <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/C_Logo.png" alt="Saiba mais">
-                        </a>
-                    </div>
                 </div>
 
                 <div class="card">
+                    <div id="icones-skils">
+                        <a><img src="img/c-.png" alt="C++"></a>
+                    </div>
                     <h3>C++</h3>
-                    <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/c-.png" alt="Saiba mais">
-                        </a>
-                    </div>
                 </div>
 
                 <div class="card">
+                    <div id="icones-skils">
+                        <a><img src="img/pitao.png" alt="Python"></a>
+                    </div>
                     <h3>Python</h3>
-                    <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/pitao.png" alt="Saiba mais">
-                        </a>
-                    </div>
                 </div>
 
                 <div class="card">
-                    <h3>Jupyter Notebook</h3>
                     <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/Jupyter.png" alt="Saiba mais">
-                        </a>
+                        <a><img src="img/js.png" alt="JavaScript"></a>
                     </div>
-                </div>
-
-                <div class="card">
                     <h3>JavaScript</h3>
-                    <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/js.png" alt="Saiba mais">
-                        </a>
-                    </div>
                 </div>
 
                 <div class="card">
+                    <div id="icones-skils">
+                        <a><img src="img/html-5.png" alt="HTML 5"></a>
+                    </div>
                     <h3>HTML 5</h3>
-                    <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/html-5.png" alt="Saiba mais">
-                        </a>
-                    </div>
                 </div>
 
                 <div class="card">
+                    <div id="icones-skils">
+                        <a><img src="img/css-3.png" alt="CSS 3"></a>
+                    </div>
                     <h3>CSS 3</h3>
-                    <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/css-3.png" alt="Saiba mais">
-                        </a>
-                    </div>
                 </div>
 
                 <div class="card">
-                    <h3>NodeJs</h3>
                     <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/node-js.png" alt="Saiba mais">
-                        </a>
+                        <a><img src="img/node-js.png" alt="Node.js"></a>
                     </div>
+                    <h3>Node.js</h3>
                 </div>
 
                 <div class="card">
-                    <h3>Golang</h3>
                     <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/go.png" alt="Saiba mais">
-                        </a>
+                        <a><img src="img/mysql.png" alt="MySQL"></a>
                     </div>
-                </div>
-
-                <div class="card">
-                    <h3>GIT</h3>
-                    <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/git logo.png" alt="Saiba mais">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
                     <h3>MySQL</h3>
-                    <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/mysql.png" alt="Saiba mais">
-                        </a>
-                    </div>
                 </div>
 
                 <div class="card">
+                    <div id="icones-skils">
+                        <a><img src="img/Postgresql.png" alt="PostgreSQL"></a>
+                    </div>
                     <h3>PostgreSQL</h3>
-                    <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/Postgresql.png" alt="Saiba mais">
-                        </a>
-                    </div>
                 </div>
 
                 <div class="card">
-                    <h3>Java EE</h3>
                     <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/javaee.jpg" alt="Saiba mais">
-                        </a>
+                        <a><img src="img/git%20logo.png" alt="GIT"></a>
                     </div>
+                    <h3>GIT</h3>
                 </div>
 
                 <div class="card">
-                    <h3>Vite</h3>
                     <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/icons8-vite-48.png" alt="Saiba mais">
-                        </a>
+                        <a><img src="img/Jupyter.png" alt="Jupyter"></a>
                     </div>
-                </div>
-
-                <div class="card">
-                    <h3>Linux</h3>
-                    <div id="icones-skils">
-                        <a target="_blank" class="imgProjeto">
-                            <img src="img/Linux.png" alt="Saiba mais">
-                        </a>
-                    </div>
+                    <h3>Jupyter</h3>
                 </div>
 
             </div>
@@ -316,10 +262,12 @@
     </div>
 
     <footer>
-        <h4>© 2025 - David Antonio Brocardo</h4>
+        <h4 data-pt="© 2025 — David Antonio Brocardo" data-en="© 2025 — David Antonio Brocardo">
+            © 2025 — David Antonio Brocardo
+        </h4>
     </footer>
 
-    <script type="module" src="src/main.js"></script>
-</body>
+    <script type="module" src="/src/main.js"></script>
 
+</body>
 </html>
