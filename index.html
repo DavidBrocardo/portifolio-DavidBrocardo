@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Brocardo</title>    
+    <title>David Brocardo — Full-Stack Developer</title>
     <link rel="icon" type="image/png" href="/portifolio-DavidBrocardo/img/programacao-da-web.png">
-  <script type="module" crossorigin src="/portifolio-DavidBrocardo/assets/main-DRGZzm71.js"></script>
-  <link rel="stylesheet" crossorigin href="/portifolio-DavidBrocardo/assets/main-Df0Luw6-.css">
+  <script type="module" crossorigin src="/portifolio-DavidBrocardo/assets/main-Cr5f7zgH.js"></script>
+  <link rel="stylesheet" crossorigin href="/portifolio-DavidBrocardo/assets/main-DinaMTcj.css">
 </head>
-
-
 
 <body>
 
     <div class="container">
 
+        <!-- ========== HEADER ========== -->
         <section id="cabecalho">
             <div class="menu-container">
                 <div class="menu-box">
@@ -23,14 +22,21 @@
                     <div class="menu-logo">
                         <img src="/portifolio-DavidBrocardo/img/programacao.png" alt="Logo">
                     </div>
-                   <div class="menu-links">
-                        <a href="#apresentacao">Sobre mim</a>
-                        <a href="#curriculo">Currículo</a>
-                        <a href="/portifolio-DavidBrocardo/projetos.html#projetos">Projetos</a>
-                        <a href="./projetos.html#conhecimentos">Habilidades</a>
-                        <a href="#contato">Contato</a>
+
+                    <div class="menu-links">
+                        <a href="#apresentacao" data-pt="Sobre mim" data-en="About">Sobre mim</a>
+                        <a href="#curriculo" data-pt="Currículo" data-en="Resume">Currículo</a>
+                        <a href="/portifolio-DavidBrocardo/projetos.html#projetos" data-pt="Projetos" data-en="Projects">Projetos</a>
+                        <a href="./projetos.html#conhecimentos" data-pt="Habilidades" data-en="Skills">Habilidades</a>
+                        <a href="#contato" data-pt="Contato" data-en="Contact">Contato</a>
                     </div>
 
+                    <div class="language-toggle">
+                        <button id="langBtn" class="lang-btn" title="Toggle language">
+                            <span class="lang-text">EN</span>
+                            <span class="lang-flag">🇧🇷</span>
+                        </button>
+                    </div>
 
                     <button class="menu-toggle" id="menuToggle">
                         <span></span>
@@ -42,197 +48,229 @@
             </div>
 
             <div class="mobile-menu" id="mobileMenu">
-               <a href="#apresentacao">Sobre mim</a>
-                <a href="#curriculo">Currículo</a>
-                <a href="./projetos.html#projetos">Projetos</a>
-                <a href="./projetos.html#conhecimentos">Habilidades</a>
-                <a href="#contato">Contato</a>
-
+                <a href="#apresentacao" data-pt="Sobre mim" data-en="About">Sobre mim</a>
+                <a href="#curriculo" data-pt="Currículo" data-en="Resume">Currículo</a>
+                <a href="./projetos.html#projetos" data-pt="Projetos" data-en="Projects">Projetos</a>
+                <a href="./projetos.html#conhecimentos" data-pt="Habilidades" data-en="Skills">Habilidades</a>
+                <a href="#contato" data-pt="Contato" data-en="Contact">Contato</a>
             </div>
-
-
-
-
         </section>
 
+        <!-- ========== HERO ========== -->
         <section id="capa-conteudo">
-            <h1>Olá, me chamo <span class="texto-destaque">David</span> 👋</h1>
-            <h3>
-                Desenvolvedor Full-Stack <br>
-                Estudante de Ciência da Computação na Universidade Estadual do Oeste do Paraná.
-            </h3>
+            <span class="hero-tag" data-pt="// Full-Stack Developer" data-en="// Full-Stack Developer"></span>
+            <h1 
+                data-pt="Olá, me chamo David"
+                data-en="Hello, I'm David">
+
+            </h1>
+
+            <h3 data-pt="Desenvolvedor Full-Stack | Cienctista da Computação pela Unioeste"
+                data-en="Full-Stack Developer | Computer Science by Unioeste">
+            </h3>          
+
+            <div class="hero-cta">
+                <a href="#contato">
+                    <button data-pt="Entre em contato" data-en="Get in touch">Entre em contato</button>
+                </a>
+                <a href="/portifolio-DavidBrocardo/projetos.html#projetos">
+                    <button data-pt="Ver projetos" data-en="View projects">Ver projetos</button>
+                </a>
+            </div>
         </section>
 
-
+        <!-- ========== HERO IMAGE ========== -->
         <section id="capa-imagem">
-            <img src="/portifolio-DavidBrocardo/img/foto_perfil.jpeg" alt="David">
+            <img src="/portifolio-DavidBrocardo/img/foto_perfil.jpg" alt="David Brocardo">
         </section>
 
-
+        <!-- ========== ABOUT ========== -->
         <section id="apresentacao">
-            <h2>Sobre mim</h2>
+            <p class="section-label" data-pt="Sobre mim" data-en="About me">Sobre mim</p>
+            <h2 data-pt="Quem sou eu" data-en="Who I am">Quem sou eu</h2>
 
-            <p>
-                Meu nome é <span class="texto-destaque">David Antonio Brocardo</span>. Sou acadêmico do último ano do
-                curso de Bacharelado
-                em Ciência da Computação pela Unioeste e atuo atualmente como estagiário na área de Desenvolvimento de
-                Software, com foco
-                em aplicações Web utilizando a linguagem Java.
+            <p data-pt="Meu nome é David Antonio Brocardo. Sou formado em Bacharel em Ciência da Computação pela Unioeste e atuo atualmente como estagiário na área de Desenvolvimento de Software, com foco em aplicações Web utilizando a linguagem Java."
+               data-en="My name is David Antonio Brocardo. I'm a Computer Science graduate from Unioeste and currently work as a Software Development intern, focusing on Web applications using Java.">
             </p>
 
-            <p>
-                Minha trajetória na área de computação começou ainda no ensino médio, quando cursei o Técnico em
-                Informática integrado ao
-                ensino regular no IFPR. Desde então, venho aprofundando meus conhecimentos e habilidades na área.
+            <p data-pt="Minha trajetória na área de computação começou ainda no ensino médio, quando cursei o Técnico em Informática integrado ao ensino regular no IFPR. Desde então, venho aprofundando meus conhecimentos e habilidades na área."
+               data-en="My career in computing began in high school when I completed the Technical Course in Computer Science at IFPR. Since then, I have been expanding my knowledge and skills in the field.">
             </p>
 
-            <p>
-                Durante a graduação, desenvolvi uma base sólida em lógica de programação, estruturas de dados, análise e
-                complexidade de algoritmos,
-                bancos de dados, engenharia de software, sistemas operacionais e redes de computadores. Participei de
-                diversos projetos acadêmicos e
-                trabalhos em equipe, que contribuíram para o aprimoramento das minhas competências em resolução de
-                problemas, colaboração e pensamento crítico.
+            <p data-pt="Durante a graduação, desenvolvi uma base sólida em lógica de programação, estruturas de dados, análise e complexidade de algoritmos, bancos de dados, engenharia de software, sistemas operacionais e redes de computadores."
+               data-en="During my undergraduate studies, I developed a solid foundation in programming logic, data structures, algorithm analysis, databases, software engineering, operating systems and computer networks.">
             </p>
 
-            <p>
-                Além de Java, também explorei outras linguagens de programação como Python, C, C++ e JavaScript.
+            <p data-pt="Além de Java, também explorei Python, C, C++ e JavaScript, me consolidando como desenvolvedor Full-Stack."
+               data-en="In addition to Java, I've also explored Python, C, C++ and JavaScript, establishing myself as a Full-Stack developer.">
             </p>
         </section>
 
+        <!-- ========== TIMELINE ========== -->
         <section id="linha-tempo">
-
             <div class="bloco-experiencia">
-                <h2>Experiência Profissional:</h2>
+                <p class="section-label" data-pt="Experiência" data-en="Experience"></p>
+                <h2 data-pt="Experiência Profissional" data-en="Professional Experience"></h2>
                 <div class="vOut">
                     <div class="vIn">
                         <div class="event">
-                            <p class="eDate">Junho de 2025  -  Estágiao em Desenvolvimento Full-Stack</p>
-                            <p class="eTxt">Atualmente, estou realizando estágio na empresa EngeGOV como desenvolvedor
-                                Full-Stack. Essa experiência tem me permitido evoluir tanto no desenvolvimento web com
-                                Java quanto no trabalho com banco de dados MySQL, entre outras tecnológias, além de
-                                consolidar meus conhecimentos práticos na área.</p>
+                            <p class="eDate" data-pt="Fev 2026 — Presente · Junior Software Engineer at EngeGOV"
+                               data-en="Feb 2026 — Present · Junior Software Engineer at EngeGOV">
+                            </p>
+                            <p class="eTxt" data-pt="Desenvolvedor Full-Stack na EngeGOV, evoluindo em desenvolvimento web com Java e banco de dados MySQL, além de consolidar conhecimentos práticos na área."
+                               data-en="Full-Stack developer at EngeGOV, evolving in web development with Java and MySQL databases, while consolidating practical knowledge in the field.">
+                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="bloco-formacao">
-                    <h2>Formação Acadêmica:</h2>
-                    <div class="vOut">
-                        <div class="vIn">
-                            <div class="event">
-                                <p class="eDate">Abril de 2026 - Formatura</p>
-                                <div id="icones-carregar">
-                                    <a target="_blank">
-                                        <img src="/portifolio-DavidBrocardo/img/carregando.png" alt="Carregando">
-                                    </a>
-                                </div>
 
-                            </div>
-                            <div class="event">
-                                <p class="eDate">Março de 2025 - Aprovação no TCC</p>
-                                <p class="eTxt">
-                                    No início de 2025 realizei a defesa do meu Trabalho de Conclusão de Curso (TCC), obtendo aprovação com nota máxima. O tema da pesquisa foi: <strong>Máquina de Turing Desplugada: Práticas para o desenvolvimento do Pensamento Computacional e o ensino de Matemática</strong>.
-                                </p>
-                            </div>
-
-                            <div class="event">
-                                <p class="eDate">2022 à 2025 - PETComp</p>
-                                <p class="eTxt">
-                                    Participei do grupo PETComp durante a graduação, experiência que me proporcionou envolvimento em projetos e eventos, além de contribuir para o desenvolvimento de habilidades interpessoais, como gestão de projetos, trabalho em equipe e comunicação em público.
-                                </p>
-                            </div>
-
-                            <div class="event">
-                                <p class="eDate">2021 à 2025 - Iniciação Científica</p>
-                                <p class="eTxt">
-                                    Durante a graduação, tive a oportunidade de desenvolver pesquisas acadêmicas, que resultaram em duas publicações no Eaict e contribuíram significativamente para minha formação acadêmica e científica.
-                                </p>
-                            </div>
-
-                            <div class="event">
-                                <p class="eDate">2021 - Bacharelado em Ciência da Computação(Unioeste)</p>
-                                <p class="eTxt">
-                                    Iniciei o curso de Bacharelado em Ciência da Computação na Unioeste, em busca de aprofundar meus conhecimentos na área da computação.
-                                </p>
-                            </div>
-
-                            <div class="event">
-                                <p class="eDate">2017 à 2020 - Técnico em Informática (IFPR)</p>
-                                <p class="eTxt">
-                                    Início da minha trajetória na área de computação, por meio do curso Técnico em Informática integrado ao ensino médio no IFPR, onde tive meus primeiros contatos com a programação.
-                                </p>
-                            </div>
+                <div class="vOut">
+                    <div class="vIn">
+                        <div class="event">
+                            <p class="eDate" data-pt="Jun 2025 — Jan 2026 · Estágio Full-Stack at EngeGOV"
+                               data-en="Jun 2025 — Jan 2026 · Full-Stack Internship EngeGOV">
+                            </p>
                         </div>
-
-        </section>
-
-
-        <section id="curriculo">
-            <div>
-                <h2>Baixe o meu currículo:</h2>
-                <div class="botoes">
-                    <a href="/portifolio-DavidBrocardo/pdf/Curriculo -David Antonio Brocardo.pdf"
-                        target="_blank">
-                        <button>Currículo</button>
-                    </a>
-
+                    </div>
                 </div>
             </div>
 
+            <div class="bloco-formacao">
+                <p class="section-label" data-pt="Formação" data-en="Education"></p>
+                <h2 data-pt="Formação Acadêmica" data-en="Academic Background"></h2>
+                <div class="vOut">
+                    <div class="vIn">
+
+                        <div class="event">
+                            <p class="eDate" data-pt="Abril 2026 — Formatura · Unioeste"
+                               data-en="April 2026 — Graduation · Unioeste">
+                                Abril 2026 — Formatura · Unioeste
+                            </p>
+                            <p class="eTxt" data-pt="Finalização do curso de Bacharelado em Ciência da Computação na Unioeste, consolidando uma formação acadêmica sólida e abrangente."
+                               data-en="Completion of the Bachelor's degree in Computer Science at Unioeste, consolidating a solid and comprehensive academic formation.">
+                                
+                            </p>
+                        </div>
+
+                        <div class="event">
+                            <p class="eDate" data-pt="Mar 2025 — Aprovação no TCC com nota máxima"
+                               data-en="Mar 2025 — TCC Approved with highest grade">
+                                Mar 2025 — Aprovação no TCC com nota máxima
+                            </p>
+                            <p class="eTxt" data-pt="Defesa do Trabalho de Conclusão de Curso, aprovado com nota máxima. Tema: Máquina de Turing Desplugada: Práticas para o desenvolvimento do Pensamento Computacional e o ensino de Matemática."
+                               data-en="Defense of Final Course Project, approved with maximum grade. Topic: Unplugged Turing Machine: Practices for developing Computational Thinking and teaching Mathematics.">
+                                Defesa do Trabalho de Conclusão de Curso, obtendo aprovação com nota máxima.
+                                Tema: <strong>Máquina de Turing Desplugada: Práticas para o desenvolvimento do
+                                Pensamento Computacional e o ensino de Matemática</strong>.
+                            </p>
+                        </div>
+
+                        <div class="event">
+                            <p class="eDate" data-pt="2022 — 2025 · PETComp" data-en="2022 — 2025 · PETComp">
+                                2022 — 2025 · PETComp
+                            </p>
+                            <p class="eTxt" data-pt="Participação no grupo PETComp, com envolvimento em projetos e eventos que desenvolveram habilidades de gestão de projetos, trabalho em equipe e comunicação pública."
+                               data-en="Participation in the PETComp group, with involvement in projects and events that developed project management, teamwork and public communication skills.">
+                                Participação no grupo PETComp com envolvimento em projetos e eventos, desenvolvendo
+                                habilidades de gestão de projetos, trabalho em equipe e comunicação em público.
+                            </p>
+                        </div>
+
+                        <div class="event">
+                            <p class="eDate" data-pt="2021 — 2025 · Iniciação Científica"
+                               data-en="2021 — 2025 · Scientific Research">
+                                2021 — 2025 · Iniciação Científica
+                            </p>
+                            <p class="eTxt" data-pt="Pesquisas acadêmicas resultando em duas publicações no Eaict, contribuindo para a formação acadêmica e científica."
+                               data-en="Academic research resulting in two publications at Eaict, contributing to academic and scientific training.">
+                                Pesquisas acadêmicas que resultaram em duas publicações no Eaict, contribuindo
+                                significativamente para minha formação acadêmica e científica.
+                            </p>
+                        </div>
+
+                        <div class="event">
+                            <p class="eDate" data-pt="2021 · Ingresso na Unioeste — Ciência da Computação"
+                               data-en="2021 · Enrolled at Unioeste — Computer Science">
+                                2021 · Ingresso na Unioeste — Ciência da Computação
+                            </p>
+                            <p class="eTxt" data-pt="Início do curso de Bacharelado em Ciência da Computação na Unioeste."
+                               data-en="Started the Computer Science degree program at Unioeste.">
+                                Início do curso de Bacharelado em Ciência da Computação na Unioeste,
+                                aprofundando conhecimentos na área da computação.
+                            </p>
+                        </div>
+
+                        <div class="event">
+                            <p class="eDate" data-pt="2017 — 2020 · Técnico em Informática · IFPR"
+                               data-en="2017 — 2020 · Technical Course in IT · IFPR">
+                                2017 — 2020 · Técnico em Informática · IFPR
+                            </p>
+                            <p class="eTxt" data-pt="Início da trajetória na computação pelo curso Técnico em Informática integrado ao ensino médio no IFPR, com os primeiros contatos com programação."
+                               data-en="Beginning of the computing career through the Technical IT Course integrated with high school at IFPR, with first contacts with programming.">
+                                Início da trajetória na computação pelo Técnico em Informática integrado ao
+                                ensino médio no IFPR, com os primeiros contatos com programação.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- ========== RESUME ========== -->
+        <section id="curriculo">
+            <div>
+                <p class="section-label" data-pt="Currículo" data-en="Resume">Currículo</p>
+                <h2 data-pt="Baixe o meu currículo" data-en="Download my resume">Baixe o meu currículo</h2>
+                <div class="botoes">
+                    <a id="resumeDownload"
+                    href="/portifolio-DavidBrocardo/pdf/Currículo - David Antonio Brocardo.pdf"
+                    download>
+                    <button data-pt="↓ Currículo (PDF)"
+                            data-en="↓ Resume (PDF)">
+                        ↓ Currículo (PDF)
+                    </button>
+                    </a>             
+                </div>
+            </div>
+        </section>
 
-
+        <!-- ========== CONTACT ========== -->
         <section id="contato">
             <div>
-                <h2>Contate-me:</h2>
+                <p class="section-label" data-pt="Contato" data-en="Contact">Contato</p>
+                <h2 data-pt="Vamos conversar?" data-en="Let's talk?">Vamos conversar?</h2>
+
                 <div id="icones-todos-contato">
-                    <a href="https://github.com/DavidBrocardo" target="_blank">
+                    <a href="https://github.com/DavidBrocardo" target="_blank" title="GitHub">
                         <img src="/portifolio-DavidBrocardo/img/github.png" alt="GitHub">
                     </a>
-                    <a href="https://linkedin.com/in/david-antonio-brocardo-8712bb1b6" target="_blank">
+                    <a href="https://linkedin.com/in/david-antonio-brocardo-8712bb1b6" target="_blank" title="LinkedIn">
                         <img src="/portifolio-DavidBrocardo/img/linkedin.png" alt="LinkedIn">
                     </a>
-                    <a href="mailto:davidbrocardo@gmail.com" target="_blank">
+                    <a href="/cdn-cgi/l/email-protection#6a0e0b1c030e081805090b180e052a0d070b030644090507" target="_blank" title="Gmail">
                         <img src="/portifolio-DavidBrocardo/img/gmail.png" alt="Gmail">
                     </a>
-                    <a href="https://wa.me/+554598246911" target="_blank">
+                    <a href="https://wa.me/+554598246911" target="_blank" title="WhatsApp">
                         <img src="/portifolio-DavidBrocardo/img/whatsapp.png" alt="WhatsApp">
                     </a>
-                    <a href="https://instagram.com/brocardo_david/" target="_blank">
-                        <img src="/portifolio-DavidBrocardo/img/instagram.png" alt="WhatsApp">
+                    <a href="https://instagram.com/brocardo_david/" target="_blank" title="Instagram">
+                        <img src="/portifolio-DavidBrocardo/img/instagram.png" alt="Instagram">
                     </a>
                 </div>
 
-                <form id="formContato">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" required />
-
-                    <label for="email">Endereço de email:</label>
-                    <input type="email" id="email" required />
-
-                    <label for="mensagem">Escreva a sua mensagem:</label>
-                    <textarea id="mensagem" rows="5" required></textarea>
-
-                    <div class="botoes">
-                        <button type="submit">Enviar</button>
-                    </div>
-                </form>
                 
             </div>
         </section>
-    </div>
 
-    <div id="popup-mensagem" class="popup">
-        <span class="mensagem-texto"></span>        
     </div>
 
     <footer>
-        <h4>© 2025 - David Antonio Brocardo</h4>
+        <h4 data-pt="© 2025 — David Antonio Brocardo" data-en="© 2025 — David Antonio Brocardo">
+            © 2025 — David Antonio Brocardo
+        </h4>
     </footer>
 
 
-    
 </body>
-
 </html>
