@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Brocardo — Projetos</title>
+    <title>David Brocardo — Projetos</title>
     <link rel="icon" type="image/png" href="img/programacao-da-web.png">
-  <script type="module" crossorigin src="/portifolio-DavidBrocardo/assets/main-Do29ZZxc.js"></script>
-  <link rel="stylesheet" crossorigin href="/portifolio-DavidBrocardo/assets/main-CWyWVZ_R.css">
+  <script type="module" crossorigin src="/portifolio-DavidBrocardo/assets/main-CuCb1hp0.js"></script>
+  <link rel="stylesheet" crossorigin href="/portifolio-DavidBrocardo/assets/main-BhvIL4iG.css">
 </head>
 
 <body>
@@ -32,10 +32,15 @@
                     </div>
 
                     <div class="language-toggle">
-                        <button id="langBtn" class="lang-btn" title="Toggle language">
+                        <button id="langBtn" class="lang-btn" type="button" title="Selecionar idioma" aria-haspopup="true" aria-expanded="false">
                             <span class="lang-text">EN</span>
                             <span class="lang-flag">🇧🇷</span>
+                            <span class="lang-arrow" aria-hidden="true">⌄</span>
                         </button>
+                        <div class="language-menu" role="menu" aria-labelledby="langBtn">
+                            <button type="button" role="menuitem" data-lang="pt-BR">🇧🇷 Português</button>
+                            <button type="button" role="menuitem" data-lang="en">🇺🇸 English</button>
+                        </div>
                     </div>
 
                     <button class="menu-toggle" id="menuToggle">
@@ -267,7 +272,7 @@
             © 2025 — David Antonio Brocardo
         </h4>
     </footer>
-
+
 
 </body>
 </html>
