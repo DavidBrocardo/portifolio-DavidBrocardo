@@ -300,6 +300,7 @@ section#cabecalho {
 .language-toggle {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .lang-btn {
@@ -332,6 +333,58 @@ section#cabecalho {
 
 .lang-text { font-size: 0.75rem; }
 .lang-flag { font-size: 1rem; }
+.lang-arrow {
+  font-size: 1rem;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.lang-btn[aria-expanded="true"] .lang-arrow {
+  transform: rotate(180deg);
+}
+
+.language-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 150px;
+  padding: 6px;
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-hover);
+  border-radius: 4px;
+  box-shadow: var(--shadow-card);
+  z-index: 1000;
+}
+
+.language-menu.show {
+  display: flex;
+}
+
+.language-menu button {
+  width: 100%;
+  justify-content: flex-start;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  text-transform: none;
+  letter-spacing: 0.03em;
+}
+
+.language-menu button::before {
+  display: none;
+}
+
+.language-menu button:hover,
+.language-menu button.selected {
+  color: var(--primary);
+  border-color: var(--border);
+  background: var(--bg-card-hover);
+  box-shadow: none;
+}
 
 /* ========== MOBILE MENU ========== */
 .menu-toggle {
@@ -890,9 +943,14 @@ footer h4 {
   .hero-cta { justify-content: center; }
 
   section#capa-imagem {
+    width: 100%;
     max-width: 320px;
     margin: 0 auto;
-    aspect-ratio: 4/5;
+    aspect-ratio: 4 / 5;
+  }
+
+  section#capa-imagem > img {
+    display: block;
   }
 
   h1 { font-size: 2.2rem; }

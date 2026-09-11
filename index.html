@@ -31,9 +31,15 @@
                     </div>
 
                     <div class="language-toggle">
-                        <button id="langBtn" class="lang-btn" title="Toggle language">
+                        <button id="langBtn" class="lang-btn" type="button" title="Selecionar idioma" aria-haspopup="true" aria-expanded="false">
+                            <span class="lang-text">EN</span>
                             <span class="lang-flag">🇧🇷</span>
+                            <span class="lang-arrow" aria-hidden="true">⌄</span>
                         </button>
+                        <div class="language-menu" role="menu" aria-labelledby="langBtn">
+                            <button type="button" role="menuitem" data-lang="pt-BR">🇧🇷 Português</button>
+                            <button type="button" role="menuitem" data-lang="en">🇺🇸 English</button>
+                        </div>
                     </div>
 
                     <button class="menu-toggle" id="menuToggle">
@@ -233,7 +239,7 @@
                 <h2 data-pt="Baixe o meu currículo" data-en="Download my resume">Baixe o meu currículo</h2>
                 <div class="botoes">
                     <a id="resumeDownload"
-                    href="/portifolio-DavidBrocardo/pdf/Currículo - David Antonio Brocardo.pdf"
+                    href="/portifolio-DavidBrocardo/pdf/Curriculo_David_Brocardo_PT.pdf"
                     download>
                     <button data-pt="↓ Currículo (PDF)"
                             data-en="↓ Resume (PDF)">

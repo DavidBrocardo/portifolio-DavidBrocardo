@@ -27,9 +27,36 @@ function initLanguage() {
   setLanguage(currentLanguage);
 
   const langBtn = document.getElementById('langBtn');
-  if (langBtn) {
-    langBtn.addEventListener('click', toggleLanguage);
-  }
+  const languageMenu = document.querySelector('.language-menu');
+  if (!langBtn || !languageMenu) return;
+
+  langBtn.addEventListener('click', () => {
+    const isOpen = languageMenu.classList.toggle('show');
+    langBtn.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  languageMenu.querySelectorAll('[data-lang]').forEach(option => {
+    option.addEventListener('click', () => {
+      setLanguage(option.dataset.lang);
+      languageMenu.classList.remove('show');
+      langBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  document.addEventListener('click', event => {
+    if (!event.target.closest('.language-toggle')) {
+      languageMenu.classList.remove('show');
+      langBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      languageMenu.classList.remove('show');
+      langBtn.setAttribute('aria-expanded', 'false');
+      langBtn.focus();
+    }
+  });
 }
 
 function setLanguage(lang) {
@@ -68,8 +95,8 @@ function setLanguage(lang) {
     const resumeDownload = document.getElementById('resumeDownload');
     if (resumeDownload) {
       resumeDownload.href = lang === 'pt-BR'
-        ? '/portifolio-DavidBrocardo/pdf/Currículo - David Antonio Brocardo.pdf'
-        : '/portifolio-DavidBrocardo/pdf/Resume - David Antonio Brocardo.pdf';
+        ? '/portifolio-DavidBrocardo/pdf/Curriculo_David_Brocardo_PT.pdf'
+        : '/portifolio-DavidBrocardo/pdf/Resume_David_Brocardo_EN.pdf';
     }
 
   });
@@ -77,21 +104,21 @@ function setLanguage(lang) {
   updateLangButton();
 }
 
-function toggleLanguage() {
-  const newLang = currentLanguage === 'pt-BR' ? 'en' : 'pt-BR';
-  setLanguage(newLang);
-}
-
 function updateLangButton() {
   const langBtn = document.getElementById('langBtn');
   if (langBtn) {
     if (currentLanguage === 'pt-BR') {
-      langBtn.querySelector('.lang-text').textContent = 'EN';
+      langBtn.querySelector('.lang-text').textContent = 'PT';
       langBtn.querySelector('.lang-flag').textContent = '🇧🇷';
     } else {
-      langBtn.querySelector('.lang-text').textContent = 'PT';
+      langBtn.querySelector('.lang-text').textContent = 'EN';
       langBtn.querySelector('.lang-flag').textContent = '🇺🇸';
     }
+
+    document.querySelectorAll('.language-menu [data-lang]').forEach(option => {
+      option.classList.toggle('selected', option.dataset.lang === currentLanguage);
+      option.setAttribute('aria-checked', String(option.dataset.lang === currentLanguage));
+    });
   }
 }
 
